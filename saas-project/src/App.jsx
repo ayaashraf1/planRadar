@@ -19,8 +19,3 @@ function App() {
 }
 
 export default App
-
-/**
- * to-do list
- * fix issue of edit/delete
- */

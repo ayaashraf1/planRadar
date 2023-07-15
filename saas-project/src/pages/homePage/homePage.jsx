@@ -2,6 +2,7 @@ import { useState } from 'react';
 import AddPopUp from '@components/addPopUp/addPopUp';
 import TicketsListing from '@components/ticketsListing/ticketsListing';
 import './homePage.css';
+import { observer } from "mobx-react";
 
 const HomePage = () => {
     const [showAddForm, setShowAddForm] = useState(false);
@@ -32,4 +33,4 @@ const HomePage = () => {
     )
 }
 
-export default HomePage;
+export default observer(HomePage);

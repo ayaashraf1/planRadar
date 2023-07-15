@@ -19,12 +19,14 @@
     font-size: 15px;
     cursor: pointer;
 }
-
+.ticket-card-container .edit-delete-container svg{
+    pointer-events: none;
+}
 .ticket-card-container .edit-delete-container svg:first-child {
     margin-right: 3px;
 }
 
-.ticket-card-container .edit-delete-container svg:hover {
+.ticket-card-container .edit-delete-container > div:hover {
     color: var(--redColor);
 }
 

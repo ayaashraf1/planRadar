@@ -1,12 +1,18 @@
+import { useEffect } from 'react';
 import TicketCard from '@components/ticketCard/ticketCard';
 import './ticketsListing.css';
-import { ticketsData } from '@mocks/tickets';
+import store from "@store";
+import { observer } from "mobx-react";
 
 const TicketsListing = ({ showAddPopup }) => {
+    useEffect(() => {
+        store.loadTickets();
+    }, []);
+
     return (<><div id="ticket-listing-container">
         <div id="add-new-ticket-div" onClick={showAddPopup}>+</div>
         {
-            ticketsData.map(ticket => {
+            store.ticketsArr.map(ticket => {
                 return <TicketCard data={ticket} key={ticket.id} showAddPopup={showAddPopup} />
             })
         }
@@ -14,4 +20,4 @@ const TicketsListing = ({ showAddPopup }) => {
     </>)
 }
 
-export default TicketsListing;
+export default observer(TicketsListing);

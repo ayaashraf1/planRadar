@@ -1,28 +1,25 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import './ticketCard.css';
-import { ticketsData } from '@mocks/tickets';
+import store from "@store";
+import { observer } from "mobx-react";
 
 const TicketCard = ({ data, showAddPopup }) => {
     const handleDelete = (e) => {
-        //[to-do] handle delete
-        const clickedEleId = e.target.parentNode.parentNode.parentNode.getAttribute('id');
-        const index = ticketsData.findIndex(f => f.id == clickedEleId);
-        delete ticketsData[index];
+        const clickedEleId = e.target.getAttribute('id');
+        store.removeTicketById(clickedEleId);
     }
 
     const handleEdit = (e) => {
-        const clickedNode = e.target.parentNode.parentNode.parentNode;
-        const clickedEleId = clickedNode.getAttribute('id') ? clickedNode.getAttribute('id') : clickedNode.parentNode.getAttribute('id')
-        const clickedEleData = ticketsData.filter(ticket => { return ticket.id == clickedEleId })[0];
-        debugger
+        const clickedEleId = e.target.getAttribute('id');
+        const clickedEleData = store.getTicketById(clickedEleId);
         showAddPopup(clickedEleData);
     }
 
     return (<div className="ticket-card-container" key={data.id} id={data.id}>
         <div className='edit-delete-container'>
-            <FontAwesomeIcon icon={faTrash} onClick={handleDelete} />
-            <FontAwesomeIcon icon={faPenToSquare} onClick={handleEdit} />
+            <div onClick={handleDelete} id={data.id}><FontAwesomeIcon icon={faTrash} /> </div>
+            <div onClick={handleEdit} id={data.id} ><FontAwesomeIcon icon={faPenToSquare} /> </div>
         </div>
         <h1>{data.subject}</h1>
         <h2>priority {data.priority} </h2>
@@ -31,4 +28,4 @@ const TicketCard = ({ data, showAddPopup }) => {
     </div>)
 }
 
-export default TicketCard;
+export default observer(TicketCard);

@@ -12,6 +12,7 @@ export default defineConfig({
       "@pages": path.resolve(__dirname, "./src/pages"),
       "@mocks": path.resolve(__dirname, "./src/mocks"),
       "@assets": path.resolve(__dirname, "./src/assets"),
+      "@store": path.resolve(__dirname, "./src/state/store")
     },
   },
 })
