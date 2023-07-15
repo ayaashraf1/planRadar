@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import WelcomPage from './pages/welcomPage/welcomPage';
 import HomePage from './pages/homePage/homePage';
+import PageNotFound from './pages/pageNotFound/pageNotFound';
 import './App.css'
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<WelcomPage />} />
           <Route path="/listing" element={<HomePage />} />
-          {/* <Route path="*" element={<NotFoundPage />} /> */}
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </>
@@ -21,7 +22,6 @@ export default App
 
 /**
  * to-do list
- * add page not found
  * format and cleanup ,delete unused code and files
  * push to githup
  * use path alias
