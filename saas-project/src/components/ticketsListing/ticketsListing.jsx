@@ -1,6 +1,6 @@
-import TicketCard from '../ticketCard/ticketCard';
+import TicketCard from '@components/ticketCard/ticketCard';
 import './ticketsListing.css';
-import { ticketsData } from './../../mocks/tickets';
+import { ticketsData } from '@mocks/tickets';
 
 const TicketsListing = ({ showAddPopup }) => {
     return (<><div id="ticket-listing-container">

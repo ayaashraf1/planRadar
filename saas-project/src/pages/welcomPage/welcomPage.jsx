@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import welcomeImg from './../../assets/welcome2.jpeg';
+import welcomeImg from '@assets/welcome2.jpeg';
 import './welcomPage.css';
 
 const WelcomPage = () => {

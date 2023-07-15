@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { default as UUID } from "node-uuid";
 import './addPopUp.css';
-import { ticketsData } from './../../mocks/tickets';
+import { ticketsData } from '@mocks/tickets';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 

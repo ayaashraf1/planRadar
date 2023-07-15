@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import AddPopUp from './../../components/addPopUp/addPopUp';
-import TicketsListing from './../../components/ticketsListing/ticketsListing';
+import AddPopUp from '@components/addPopUp/addPopUp';
+import TicketsListing from '@components/ticketsListing/ticketsListing';
 import './homePage.css';
 
 const HomePage = () => {

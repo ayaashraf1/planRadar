@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import './ticketCard.css';
-import { ticketsData } from './../../mocks/tickets';
+import { ticketsData } from '@mocks/tickets';
 
 const TicketCard = ({ data, showAddPopup }) => {
     const handleDelete = (e) => {

@@ -13,11 +13,13 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "node-uuid": "^1.4.8",
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1"
   },
   "devDependencies": {
+    "@types/node": "^20.4.2",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@vitejs/plugin-react": "^4.0.1",
@@ -26,5 +28,21 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",
     "vite": "^4.4.0"
+  },
+  "compilerOptions": {
+    "paths": {
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@mocks/*": [
+        "./src/mocks/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ]
+    }
   }
 }
