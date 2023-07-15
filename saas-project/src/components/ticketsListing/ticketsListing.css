@@ -1,5 +1,6 @@
 #ticket-listing-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #add-new-ticket-div {
@@ -7,15 +8,39 @@
     width: 15%;
     height: 227px;
     overflow: hidden;
-    background: var(--ticketColor);
+    background: var(--ticketNewColor);
     display: flex;
     flex-direction: column;
     padding: 13px;
     box-sizing: border-box;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     font-size: 59px;
+}
+
+@media (max-width: 823px) {
+    #add-new-ticket-div {
+        width: 22%;
+    }
+}
+
+@media (max-width: 720px) {
+    #add-new-ticket-div {
+        width: 30%;
+    }
+}
+
+@media (max-width: 576px) {
+    #add-new-ticket-div {
+        width: 44%;
+    }
+}
+
+@media (max-width: 375px) {
+    #add-new-ticket-div {
+        width: 100%;
+    }
 }

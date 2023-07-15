@@ -4,7 +4,9 @@
   --redColor: red;
   --grayColor: #999;
   --lightColor: white;
-  --ticketColor: lightyellow;
+  --ticketNewColor: lightyellow;
+  --ticketActiveColor: #add;
+  --ticketClosedColor: #c1e2c1;
 }
 
 body {

@@ -16,7 +16,7 @@ const TicketCard = ({ data, showAddPopup }) => {
         showAddPopup(clickedEleData);
     }
 
-    return (<div className="ticket-card-container" key={data.id} id={data.id}>
+    return (<div className={`ticket-card-container ${data.status}`} key={data.id} id={data.id}>
         <div className='edit-delete-container'>
             <div onClick={handleDelete} id={data.id}><FontAwesomeIcon icon={faTrash} /> </div>
             <div onClick={handleEdit} id={data.id} ><FontAwesomeIcon icon={faPenToSquare} /> </div>
