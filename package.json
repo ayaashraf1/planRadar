@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "react-router-dom": "^6.14.1"
+  },
+  "devDependencies": {
+    "node-uuid": "^1.4.8"
+  }
+}

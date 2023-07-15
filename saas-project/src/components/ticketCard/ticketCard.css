@@ -1,0 +1,25 @@
+.ticket-card-container{
+    border: 1px solid var(--grayColor);
+    width: 15%;
+    height: 227px;
+    overflow: hidden;
+    background: var(--ticketColor);
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.ticket-card-container h1,.ticket-card-container h2,.ticket-card-container h4{
+    margin:0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.ticket-card-container p{
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+}
