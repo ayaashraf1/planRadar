@@ -21,7 +21,6 @@ export default App
 
 /**
  * to-do list
- * readme file
  * add page not found
  * format and cleanup ,delete unused code and files
  * push to githup
