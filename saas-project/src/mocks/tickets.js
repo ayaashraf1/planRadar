@@ -1,4 +1,4 @@
-export const data = [{
+export let ticketsData = [{
     id:1,
     subject:'ticket1',
     priority:1,

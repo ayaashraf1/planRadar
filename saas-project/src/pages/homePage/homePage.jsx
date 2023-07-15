@@ -5,10 +5,20 @@ import './homePage.css';
 
 const HomePage = () =>{
     const [showAddForm, setShowAddForm] = useState(false);
-    const showAddPopup = () => {
+    const [editMode,setEditMode] = useState(false);
+    const [popUpData,setPopUpData] = useState({});
+
+    const showAddPopup = (data) => {
+        if(data){
+           setEditMode(true);
+           setPopUpData(data)
+        }
         setShowAddForm(true);
     }
     const closeAddPopup = () => {
+        if(editMode){
+
+        }
         setShowAddForm(false);
     }
     return (
@@ -17,7 +27,7 @@ const HomePage = () =>{
             <h2>Taskboard</h2>
             <TicketsListing showAddPopup={showAddPopup} />
             </div>
-            {showAddForm && <AddPopUp closePopUp={closeAddPopup} />}
+            {showAddForm && <AddPopUp closePopUp={closeAddPopup} popUpData={popUpData} />}
         </div>
     )
 }

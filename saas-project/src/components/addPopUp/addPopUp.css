@@ -26,7 +26,6 @@
     border-radius: 5px;
 }
 #add-form-popUp .closeIcon{
-    border: 1px solid var(--darkColor);
     width: 20px;
     height: 20px;
     display: flex;
@@ -36,6 +35,9 @@
     cursor: pointer;
     position: absolute;
     right: 20px;
+}
+#add-form-popUp .closeIcon:hover{
+    color:var(--redColor);
 }
 #add-form-popUp h3{
     margin:0px;
