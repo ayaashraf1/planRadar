@@ -1,8 +1,8 @@
 import TicketCard from '../ticketCard/ticketCard';
 import './ticketsListing.css';
-import {ticketsData} from './../../mocks/tickets';
+import { ticketsData } from './../../mocks/tickets';
 
-const TicketsListing = ({showAddPopup}) => {
+const TicketsListing = ({ showAddPopup }) => {
     return (<><div id="ticket-listing-container">
         <div id="add-new-ticket-div" onClick={showAddPopup}>+</div>
         {

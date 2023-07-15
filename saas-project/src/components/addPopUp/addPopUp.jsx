@@ -10,7 +10,7 @@ const AddPopUp = ({ closePopUp, popUpData }) => {
     const [priority, setPriority] = useState(1);
     const [status, setStatus] = useState('');
     const [description, setDescription] = useState('');
-    const [isEdit,setIsEdit]  = useState(false);
+    const [isEdit, setIsEdit] = useState(false);
 
     const addNewTicket = () => {
         const id = UUID.v4();
@@ -24,8 +24,8 @@ const AddPopUp = ({ closePopUp, popUpData }) => {
         ticketsData.push(newTicket);
         closePopUp();
     }
-    const editTicket = ()=>{
-        const index = ticketsData.findIndex(f=>f.id==popUpData.id); 
+    const editTicket = () => {
+        const index = ticketsData.findIndex(f => f.id == popUpData.id);
         ticketsData[index].subject = subject;
         ticketsData[index].priority = priority;
         ticketsData[index].status = status;
@@ -39,10 +39,10 @@ const AddPopUp = ({ closePopUp, popUpData }) => {
             setPriority(popUpData.priority);
             setStatus(popUpData.status);
             setDescription(popUpData.description);
-        }else{
+        } else {
             setIsEdit(false);
         }
-       
+
     }, [popUpData]);
 
     return (
@@ -59,7 +59,7 @@ const AddPopUp = ({ closePopUp, popUpData }) => {
                     <option value='closed'>closed</option>
                 </select><br />
                 <textarea rows={5} placeholder='Enter description' value={description} onChange={e => setDescription(e.target.value)}></textarea><br />
-                <button onClick={isEdit?editTicket:addNewTicket} disabled={!subject || !priority || !status || !description}>{isEdit?'Edit':'Add'}</button>
+                <button onClick={isEdit ? editTicket : addNewTicket} disabled={!subject || !priority || !status || !description}>{isEdit ? 'Edit' : 'Add'}</button>
             </div></>
     )
 }

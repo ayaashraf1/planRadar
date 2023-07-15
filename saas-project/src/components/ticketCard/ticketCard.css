@@ -1,4 +1,4 @@
-.ticket-card-container{
+.ticket-card-container {
     border: 1px solid var(--grayColor);
     width: 15%;
     height: 227px;
@@ -11,25 +11,32 @@
     margin-bottom: 10px;
     margin-right: 10px;
 }
-.ticket-card-container .edit-delete-container{
+
+.ticket-card-container .edit-delete-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     font-size: 15px;
     cursor: pointer;
 }
-.ticket-card-container .edit-delete-container svg:first-child{
-    margin-right:3px;
+
+.ticket-card-container .edit-delete-container svg:first-child {
+    margin-right: 3px;
 }
-.ticket-card-container .edit-delete-container svg:hover{
-    color:var(--redColor);
+
+.ticket-card-container .edit-delete-container svg:hover {
+    color: var(--redColor);
 }
-.ticket-card-container h1,.ticket-card-container h2,.ticket-card-container h4{
-    margin:0;
+
+.ticket-card-container h1,
+.ticket-card-container h2,
+.ticket-card-container h4 {
+    margin: 0;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.ticket-card-container p{
+
+.ticket-card-container p {
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden !important;

@@ -7,7 +7,7 @@ import './App.css'
 function App() {
   return (
     <>
-     <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<WelcomPage />} />
           <Route path="/listing" element={<HomePage />} />
@@ -22,8 +22,6 @@ export default App
 
 /**
  * to-do list
- * format and cleanup ,delete unused code and files
- * push to githup
  * use path alias
- * fix issue of edit 
+ * fix issue of edit/delete
  */

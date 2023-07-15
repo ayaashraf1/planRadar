@@ -1,8 +1,8 @@
 import './pageNotFound.css';
 
-const PageNotFound = () =>{
+const PageNotFound = () => {
     return <div id="page-not-found-container">
-         <h1>this page not found</h1>
+        <h1>this page not found</h1>
     </div>
 }
 

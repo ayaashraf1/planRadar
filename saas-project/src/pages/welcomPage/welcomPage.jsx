@@ -11,10 +11,10 @@ const WelcomPage = () => {
             <div id="welcome-message">
                 <h1>Hello!</h1>
                 <div>PlanRadar is a SaaS application for construction documentation & defect management. Our
-                    customers create lots of tickets every day.</div><br/>
+                    customers create lots of tickets every day.</div><br />
                 <button onClick={() => { navigate("/listing") }}>go to listing page</button>
             </div>
-        </div><br/>
+        </div><br />
         <small>Designed & Developed by Aya</small>
     </div>
 }

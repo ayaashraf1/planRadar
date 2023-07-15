@@ -8,15 +8,18 @@
     opacity: 0.8;
     z-index: 100;
 }
-#add-form-popUp{
+
+#add-form-popUp {
     position: absolute;
     top: 57%;
     left: 50%;
     background: var(--lightColor);
     width: 500px;
     height: auto;
-    margin-left: -250px; /*Half the value of width to center div*/
-    margin-top: -250px; /*Half the value of height to center div*/
+    margin-left: -250px;
+    /*Half the value of width to center div*/
+    margin-top: -250px;
+    /*Half the value of height to center div*/
     z-index: 200;
 
     display: flex;
@@ -25,7 +28,8 @@
     box-sizing: border-box;
     border-radius: 5px;
 }
-#add-form-popUp .closeIcon{
+
+#add-form-popUp .closeIcon {
     width: 20px;
     height: 20px;
     display: flex;
@@ -36,17 +40,23 @@
     position: absolute;
     right: 20px;
 }
-#add-form-popUp .closeIcon:hover{
-    color:var(--redColor);
+
+#add-form-popUp .closeIcon:hover {
+    color: var(--redColor);
 }
-#add-form-popUp h3{
-    margin:0px;
+
+#add-form-popUp h3 {
+    margin: 0px;
     margin-bottom: 20px;
 }
-#add-form-popUp input ,#add-form-popUp select,#add-form-popUp textarea{
+
+#add-form-popUp input,
+#add-form-popUp select,
+#add-form-popUp textarea {
     padding: 5px;
 }
-#add-form-popUp button{
+
+#add-form-popUp button {
     padding: 10px;
     font-weight: bold;
     border: none;
@@ -55,12 +65,14 @@
     border-radius: 5px;
     cursor: pointer;
 }
-#add-form-popUp button:hover{
+
+#add-form-popUp button:hover {
     background: var(--lightColor);
-    color:  var(--redColor);
-    border:1px solid  var(--redColor);
+    color: var(--redColor);
+    border: 1px solid var(--redColor);
 }
-#add-form-popUp button:disabled{
+
+#add-form-popUp button:disabled {
     background: var(--grayColor);
     pointer-events: none;
 }

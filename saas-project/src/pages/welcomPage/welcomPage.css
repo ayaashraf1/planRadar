@@ -1,4 +1,4 @@
-#welcome-page-container{
+#welcome-page-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,9 +6,10 @@
     height: 100vh;
     background-color: var(--bgColor);
 }
-#welcome-page-container > div{
-    width:550px;
-    height:300px;
+
+#welcome-page-container>div {
+    width: 550px;
+    height: 300px;
     border-radius: 5px;
     box-sizing: border-box;
     color: white;
@@ -18,11 +19,13 @@
     border: 1px solid var(--darkColor);
     overflow: hidden;
 }
-#welcome-page-container img{
+
+#welcome-page-container img {
     width: 300px;
     height: inherit;
 }
-#welcome-page-container #welcome-message{
+
+#welcome-page-container #welcome-message {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -30,7 +33,8 @@
     padding: 10px 20px;
     color: var(--darkColor);
 }
-#welcome-page-container #welcome-message button{
+
+#welcome-page-container #welcome-message button {
     width: -webkit-fill-available;
     border: none;
     background: var(--darkColor);
